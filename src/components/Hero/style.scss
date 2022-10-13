@@ -1,0 +1,27 @@
+main.app-hero {
+  height: calc(100vs - 9.2rem);
+
+  h1.greate-code {
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color: black;
+  }
+}
+
+@media (max-width:1024px) {
+  main.app-hero {
+    padding: 9rem 0;
+    text-align: center;
+
+    &>div.container {
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+    }
+    #description {
+      justify-content: center;
+      h2 {
+        max-width: 18ch;
+      }
+    }
+  }
+}

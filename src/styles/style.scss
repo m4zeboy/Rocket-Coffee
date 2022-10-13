@@ -1,0 +1,96 @@
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--backgrond);
+  background-image: url('../assets/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+body {
+  height: 100vh;
+  position: relative;
+  font-family: 'Manrope', sans-serif;
+  background-image: url('../assets/rocket-coffee.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 60vw;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+}
+button {
+  border: none;
+  font-size: 1.1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 8rem;
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    background-position: left;
+  }
+  body {
+    background-size: 100%;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  a {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+}

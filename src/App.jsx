@@ -1,6 +1,7 @@
 import React from 'react'
 import { Landing } from './pages/Landing'
-import './style.scss'
+import './styles/style.scss'
+import './styles/buttons.scss'
 
 function App() {
   return (

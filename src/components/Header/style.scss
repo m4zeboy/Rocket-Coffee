@@ -1,0 +1,46 @@
+header.app-header {
+  padding: 5.6rem 0;
+
+  &>.container>.flex-center {
+    justify-content: space-between;
+    
+    ul {
+      gap: 3.2rem;
+      &>li:hover {
+        &>a {
+          color: var(--border-menu-mobile);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  header.app-header {
+    padding: 3.6rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .modal {
+    position: fixed;
+    background-color: black;
+    z-index: 3;
+    width: 100%;
+    height: calc(100vh - 92px);
+    overflow: hidden;
+    &>nav>ul>li {
+      padding: 1.6rem;
+      border-bottom: 1px solid var(--border);
+      transition: ease-out .05s;
+      &:hover {
+        border-left: .5rem solid var(--button);
+        &>a {
+          color: white;
+        }
+      }
+      &>a {
+        color: var(--border-menu-mobile);
+      }
+    }
+  }
+}
